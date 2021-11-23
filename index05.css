@@ -1,0 +1,38 @@
+body > div {
+    width: 400px;
+    height: 150px;
+    border: 2px solid black;
+    position: relative;
+    overflow-x: hidden;
+}
+
+div > div {
+    border: 2px solid white;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.box:nth-child(1) {
+    background-color: red;
+    left:10px;
+    top: 10px;
+    z-index: 3;
+}
+
+.box:nth-child(2) {
+    background-color: green;
+    left: 50px;
+    top: 50px;
+    z-index: 2;
+}
+
+.box:nth-child(3) {
+    background-color: blue;
+    left: 90px;
+    top: 90px;
+    z-index: 1;
+}
